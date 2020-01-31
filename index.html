@@ -8,13 +8,13 @@
 </head>
 <body>
     <script>
-        let lamp = new ElectricLamp();
+        let lamp = new ElectricLamp(false);
         let switchButton = new SwitchButton(false, lamp);
         let count = 0;
         while(count <10){
             count++;
-            switchButton.switchOn();
-            switchButton.switchOff();
+            switchButton.switchOn(lamp);
+            switchButton.switchOff(lamp);
         }
     </script>
 </body>
